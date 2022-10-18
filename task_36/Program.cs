@@ -40,7 +40,7 @@ void PrintArr(int[] arr)
 int N = GetData("Введите длину массива N=");
 int Min = GetData("Введите минимальный элемент массива Min=");
 int Max = GetData("Введите максимальный элемент массива Max=");
-if (Min > Max) Console.WriteLine("Неверные данные");
+if (N < 0 || Min > Max) Console.WriteLine("Неверные данные");
 else
 {
     int[] Arr = FillArr(N, Min, Max);
